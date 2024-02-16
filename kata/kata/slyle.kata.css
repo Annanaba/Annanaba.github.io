@@ -1,0 +1,448 @@
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('TTLakes-Medium.eot');
+    src: local('TT Lakes Medium'), local('TTLakes-Medium'),
+        url('TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+        url('TTLakes-Medium.woff2') format('woff2'),
+        url('TTLakes-Medium.woff') format('woff'),
+        url('TTLakes-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+:root {
+    --base-color: #B8FFEC;
+    --fon-color: #F8F8F8;
+    --text-color: #1B1C21;
+    --menu-text-color: #7E7E82;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'TT Lakes';
+    margin: 0;
+    background-color: #F8F8F8;
+}
+
+image {
+    width: 100%;
+    height: auto;
+}
+
+h2 {
+    margin: 0;
+}
+
+.main__content__desktop {
+    display: none;
+}
+
+/* Header */
+
+.header {
+    width: 100%;
+    background-color: white;
+}
+
+/* Контейнеры */
+
+.header-navigation {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 88px;
+    margin: 0 16px;
+}
+
+.main__container_top {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin: 24px 0;
+}
+
+.main__content__conteiner {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 35px;
+}
+
+.main__content_rait {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 300px;
+    margin: 0 16px;
+}
+
+/* Список навигации */
+
+.image-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-size: contain;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.image-button-list {
+    list-style: none;
+    display: flex;
+}
+
+.image-button-item {
+    margin-right: 10px;
+}
+
+.image-button-item:nth-child(-n+3) {
+    margin-right: 0;
+}
+
+.image-button-list .image-button-item:nth-child(-n+3) button {
+    display: none;
+}
+
+
+/* Логотип */
+.header-navigation__logo{
+    width: 100px;
+    height: 50px;
+}
+
+/* Заголовок */
+.subtitle{
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.subtitle::before{
+    content: url(/Users/annakozevnikova/Desktop/атом/image/highlight.svg);
+    width: 4px;
+    height:100%;
+    margin-right:12px;
+}
+
+.main__subtitle{
+    height: 40px;
+}
+
+/* меню */
+.menu__list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.menu__item{
+    padding: 8px 12px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+    border-radius: 6px;
+}
+
+.menu__link {
+    display: block;
+    white-space: nowrap;
+    color: var(--menu-text-color);
+
+}
+
+.menu__item:hover {
+    border: 2px solid var(--base-color); 
+}
+
+.menu__item:first-child {
+    border: 2px solid var(--base-color); 
+}
+.main__menu{
+     width: 100%;
+     overflow-x: scroll;
+     margin-left: 16px;
+}
+
+/* Текст */
+.p_mobile,
+.p_tablet,
+.p_desktop {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.20px;
+}
+
+.p_tablet,
+.p_desktop {
+    display: none;
+}
+
+/* КНОПКА */
+.button{
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: var(--fon-color);
+    padding: 0;
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+}
+.button::before{
+    content: url(/Users/annakozevnikova/Desktop/атом/image/ic/expand.svg);
+    margin-right: 8px;
+}
+
+
+.main__image {
+    width: 100%;
+    height: auto; 
+}
+
+@media screen and (min-width: 785px) {
+
+    .main__content__desktop{
+        display: none;
+    }
+    .image-button-list .image-button-item:nth-child(-n+3) button {
+        display: flex;
+        margin-right: 16px
+    }
+
+    .header__list .image-button-item:nth-child(3) {
+        position: relative;
+    }
+    
+    .header__list .image-button-item:nth-child(3)::after {
+        content: url("/Users/annakozevnikova/Desktop/атом/image/divider.svg");
+        width: 2px;
+        height: 32px;
+        margin-left: 20px;
+        position: absolute;
+        right: 0; 
+        top: 50%; 
+        transform: translateY(-50%); 
+    }
+
+    .header__list .image-button-item:nth-child(4) {
+        margin-left: 20px;
+    }
+
+    .header-navigation {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .main__container_top {
+    margin-bottom: 32px
+    }
+
+    .main__menu {
+        margin-left: 24px;
+    }
+
+
+.main__content__conteiner {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+    justify-content: flex-start;
+    max-height: 208px;
+}
+
+.p_tablet{
+    display: block;
+
+}
+
+.main__content_rait {
+    margin-left: 24px;
+    padding: 0;
+}
+ 
+
+.main__content {
+    display: flex;
+    flex-direction: row;
+    margin-top: 32px;
+    gap: 48px;
+}
+
+.main__image{
+    width: 100%;
+    height: auto;
+
+}
+}
+
+@media screen and (min-width: 1121px) {
+    .main__content__desktop{
+        display: block;
+    }
+
+    .header__container,
+    .main__subtitle {
+        display: none;
+    }
+    
+
+    .main__content__desktop__top{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        max-width: 1096px;
+    }
+
+
+    .desktop-nav__list {
+        display: flex;
+        gap: 32px;
+    }
+    
+
+    .desktop-nav__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        white-space: nowrap;
+        margin: 0;
+    }
+    
+    .desktop-nav__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FF3E79;
+        width: 40px; 
+        height: 40px; 
+        border-radius: 50%;
+    }
+    
+    .desktop-nav__caption {
+        display: flex;
+        font-family: "TT Lakes Medium";
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+    }
+
+    .menu__list {
+       display: flex;
+       align-items: center;
+       list-style: none;
+        margin: 0;
+        padding-left: 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+
+    .menu__item{
+            
+       display: flex;
+       width: 200px;
+       flex-wrap: wrap;
+       justify-content:center;
+    }
+     .menu__item:last-child {
+       justify-content: flex-start;
+    }
+        
+
+    .main{
+      max-width: 1100px;
+      margin-top: 42px;
+    }
+
+    .p_desktop{
+      display: block;
+    }
+
+    .main__content__conteiner{
+        max-height:550px;
+    }
+
+    .main__content_rait{
+      margin-left: 34px;
+      max-width: none;
+    }
+
+    .content__rait,
+    .content__image {
+        flex: 1;
+        padding: 0;
+    }
+
+    .main__image {
+        width: 100%;
+    }
+
+
+    .content__desktop__subtitle{
+        color: #1B1C21; 
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    .subtitle::before {
+       margin-right: 30px;
+    }
+
+    .desktop-nav__caption{
+       color: #1B1C21;
+       font-size: 16px;
+       font-weight: 500;
+    }
+
+    .p_tablet{
+      display: none;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
