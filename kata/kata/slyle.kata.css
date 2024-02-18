@@ -220,13 +220,19 @@ h2 {
     font-size: 16px;
     cursor: pointer;
 }
-.button::before{
-    content: url(/Users/annakozevnikova/Desktop/атом/image/ic/expand.svg);
+.button::before {
+    content: url(image/expand.svg);
+    display: inline-block;
+    vertical-align: middle;
     margin-right: 8px;
+    width: 24px;
+    height: 24px;
 }
 
 
-.main__image {
+
+
+.main__description_image {
     width: 100%;
     height: auto; 
 }
@@ -301,7 +307,7 @@ h2 {
     gap: 48px;
 }
 
-.main__image{
+.main__description_image{
     width: 100%;
     height: auto;
 
