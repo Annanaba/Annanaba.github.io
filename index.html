@@ -1,116 +1,60 @@
-<!DOCTYPE HTML>
-<html>
-   <head>
-      <title>Блок 1.3: Построение сеток + БЭМ именование</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta charset="utf-8">
-      <link rel='stylesheet' href='kata/kata/slyle.kata.css'>
-      <link rel="stylesheet" href="kata/normalize.css">
-   </head>
-   <body>
-    <header class="header">
-        <div class="header__container">
-            <div class="header-navigation">
-                <button class="image-button">
-                    <img src="image/burger.svg" alt="burger" class="header-navigation__img">
-                </button>
-                <img src="image/Group.svg" alt="logo" class="header-navigation__logo">
-                <img class="divider" src="image/divider.svg" alt="Раздилитель">
-            </div>
-            <div class="header__list">
-                <ul class="image-button-list">
-                    <li class="image-button-item">
-                        <button class="image-button">
-                            <img src="image/call.svg" alt="call" class="header-navigation__img">
-                        </button>
-                    </li>
-                    <li class="image-button-item">
-                        <button class="image-button">
-                            <img src="image/chat.svg" alt="chat" class="header-navigation__img">
-                        </button>
-                    </li>
-                    <li class="image-button-item">
-                        <button class="image-button">
-                            <img src="image/profile.svg" alt="profile" class="header-navigation__img">
-                        </button>
-                    </li>
-                    <li class="image-button-item">
-                        <button class="image-button">
-                            <img src="image/icons1.svg" alt="repair" class="header-navigation__img_profile">
-                        </button>
-                    </li>
-                    <li class="image-button-item">
-                        <button class="image-button">
-                            <img src="image/checkstatus.svg" alt="checkstatus" class="header-navigation__img">
-                        </button>
-                    </li>
-                </ul>
-            </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="stail.css">
+    <title>Блок 1.5</title>
+</head>
+<body>
+    <div class="body-conteiner body-conteiner__mobill">
+        <div class="conteiner-top">
+    <header class="header-on header-on__mobill">
+        <div class="heder-conteiner  heder-onteiner__mobill">
+            <button class="btn btn__round btn__round__icons btn__round__icons_close"></button>
+            <button class="btn"></button>
+            <img src="image/Group.svg" alt="Логотип" class="logo header__logo">
         </div>
-    </header>   
-    <main class="main">
-        <div class="main__content__desktop">
-            <div class="main__content__desktop__top">
-                <div class="subtitle content__desktop__subtitle">
-                    <h2 class="content__title">Услуги и сервисы</h2>
-                </div>
-                <ul class="desktop-nav__list">
-                    <li class="desktop-nav__item">
-                        <span class="desktop-nav__caption">Оставить заявку</span>
-                        <div class="desktop-nav__img">
-                            <img src="image/checkstatus.svg" alt="Check Status">
-                        </div>
-                    </li>
-                    <li class="desktop-nav__item">
-                        <span class="desktop-nav__caption">Статус ремонта</span>
-                        <div class="desktop-nav__img">
-                            <img src="image/icons1.svg" alt="Icons 1">
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>            
-        <div class="main__container_top">
-        <div class="subtitle main__subtitle">
-            <h2>Услуги и сервисы</h2>
-          </div>
-          <nav class="menu main__menu">
-              <ul class="menu__list main__menu-list">
-                 <li class="menu__item">
-                    <a href="#" class="menu__link">Ремонтируемые бренды</a>
-                 </li>
-                 <li class="menu__item">
-                    <a href="#" class="menu__link">Ремонтируемые устройства</a>
-                 </li>
-                 <li class="menu__item">
-                    <a href="#" class="menu__link">Цены на услуги</a>
-                 </li>
-                 <li class="menu__item">
-                    <a href="#" class="menu__link">Адреса сервисных центров</a>
-                 </li>
-                 <li class="menu__item">
-                    <a href="#" class="menu__link">Специальные цены</a>
-                 </li>
-                 <li class="menu__item">
-                    <a href="#" class="menu__link">Отзывы</a>
-                 </li>
-              </ul>
-           </nav>
+        <button class="btn btn__round btn__round__icons btn__round__icons_search"></button>
+    </header>
+    <nav class="mobile-menu mobile-menu__mobill">
+        <ul class="mobile-menu__list">
+            <li class="mobile-menu__item "><a href="#" class="mobile-menu__link">Ремонт техники</a></li>
+            <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Услуги и сервисы</a></li>
+            <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Корпоративным клиентам</a></li>
+            <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Продавцам техники</a></li>
+            <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Партнерам</a></li>
+            <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Производителям</a></li>
+            <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Наши сервисные центры</a></li>
+            <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Контакты</a></li>
+        </ul>
+    </nav>
+</div>
+<footer>
+    <div class="footer__conteiner_mobill">
+        <div class="user-menu services__user-menu services__user-menu__footer">
+            <button class="btn btn__round btn__round__icons btn__round__icons_call" aria-label="Заказать звонок"></button>
+            <button class="btn btn__round btn__round__icons btn__round__icons_chat" aria-label="Начать чат"></button>
+            <button class="btn btn__round btn__round__icons btn__round__icons_profille" aria-label="Профиль"></button>
         </div>
-        <section class="muin__content">
-            <div class="main__content__conteiner">
-                <div class="content__rait main__content_rait">
-                    <p class="p_mobil">Мы являемся авторизованным сервисным центром по ремонту техники Dell.
-                         Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-                         <p class="p_tablet">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</p>
-                         <p class="p_desktop">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
-                     <button class="button main__button">Читать далее</button>
+        <div class="footer__contact-info_mobill">
+            <a href="tel:+123456789" class="tell-link tell-link__footer__contact-info_mobill">8 800 890 8900</a>
+            <a href="mailto:mail@cps.com" class="email-link email-link__footer__contact-info_mobill">mail@cps.com</a>
+        </div>
+        <div class="footer__language_mobolle">
+                <div class="selected-language-choisi">
+                    <span id="selected-value">RU</span>
                 </div>
-                <div class="content__image">
-                    <img src="image/cps.png" alt="SPC" class="main__description_image">
+                <div class="selected-language">
+                    <span id="selected-value">EN</span>
                 </div>
-            </div>
-        </section>
-
-    </main> 
-   </body>
+                <div class="selected-language">
+                    <span id="selected-value">CH</span>
+                </div>
+        </div>
+    </div>   
+    </div>
+</footer>
+</body>
+</html>
